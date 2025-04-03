@@ -1,3 +1,5 @@
+# This file is about exploring the data and forming the bigram model
+
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
