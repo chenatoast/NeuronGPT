@@ -1,0 +1,32 @@
+Input text length: 1115393 characters
+Vocabulary size: 65 unique characters
+10.79 M parameters
+step 0: train loss 4.2227, val loss 4.2305
+step 500: train loss 1.7518, val loss 1.9047
+step 1000: train loss 1.3933, val loss 1.6109
+step 1500: train loss 1.2641, val loss 1.5219
+step 2000: train loss 1.1864, val loss 1.5032
+step 2500: train loss 1.1282, val loss 1.4913
+step 3000: train loss 1.0711, val loss 1.4900
+step 3500: train loss 1.0138, val loss 1.5014
+step 4000: train loss 0.9587, val loss 1.5133
+step 4500: train loss 0.9132, val loss 1.5588
+step 4999: train loss 0.8561, val loss 1.5801
+
+Sample generated text:
+----------------------------------------
+
+Shall begun, find above thee To this cause?
+O, if thou wert best thy eye; and content
+Thy wives and row arm at Saint Peter's Church,
+Or will take this for my father's land
+Through behind my heart-hearing death whom they call
+Was sent in my lord. Them or wife? farewell:
+I'll bear it well; and yet yet not, my name,
+Will you soon yourself wanton with me.
+Go forth yourselves; for I will buy four hearts
+And raise upon theming in this edge:
+If all the other will not, but yet you did but thus;
+and so
+
+----------------------------------------

@@ -16,7 +16,7 @@ eval_iters = 200
 
 torch.manual_seed(1337)  #so that we get the same values while working on seuences
 
-with open('input.txt', 'r', encoding='utf-8') as f:
+with open(r'NeuronGPT\input.txt', 'r', encoding='utf-8') as f:
     text = f.read()
 
 # here are all the unique characters that occur in this text
@@ -39,15 +39,17 @@ def get_batch(split):
     # generate a small batch of data of inputs x and targets y
     data = train_data if split == 'train' else val_data
     ix = torch.randint(len(data) - block_size, (batch_size,))
+    # generates batch_size random starting positions in the data, 
+    # making sure that each position has enough room after it to extract a complete sequence of length block_size
     x = torch.stack([data[i:i+block_size] for i in ix])
     y = torch.stack([data[i+1:i+block_size+1] for i in ix])
     x, y = x.to(device), y.to(device)
     return x, y
 
-@torch.no_grad()
+@torch.no_grad()        #a decorator that disables gradient computation during this function
 def estimate_loss():
     out = {}
-    model.eval()
+    model.eval()      #sets model to evaluate mode
     for split in ['train', 'val']:
         losses = torch.zeros(eval_iters)
         for k in range(eval_iters):
